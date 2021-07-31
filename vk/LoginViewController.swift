@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
         let login = loginTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         
-        if !(login.isEmpty && password.isEmpty) && (login == "111" && password == "111") {
+        if !(login.isEmpty && password.isEmpty) && (login == "1" && password == "1") {
             print("Autorisation")
         }
         else{

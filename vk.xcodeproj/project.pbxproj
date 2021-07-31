@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		3012AEEA26B4662000650313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012AEE926B4662000650313 /* AppDelegate.swift */; };
 		3012AEEC26B4662000650313 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012AEEB26B4662000650313 /* SceneDelegate.swift */; };
-		3012AEEE26B4662000650313 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012AEED26B4662000650313 /* ViewController.swift */; };
 		3012AEF126B4662000650313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3012AEEF26B4662000650313 /* Main.storyboard */; };
 		3012AEF326B4662300650313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3012AEF226B4662300650313 /* Assets.xcassets */; };
 		3012AEF626B4662300650313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3012AEF426B4662300650313 /* LaunchScreen.storyboard */; };
 		3012AF0126B4662300650313 /* vkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012AF0026B4662300650313 /* vkTests.swift */; };
 		3012AF0C26B4662300650313 /* vkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012AF0B26B4662300650313 /* vkUITests.swift */; };
+		3012AF1A26B4664B00650313 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3012AF1926B4664B00650313 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		3012AEE626B4662000650313 /* vk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3012AEE926B4662000650313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3012AEEB26B4662000650313 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3012AEED26B4662000650313 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3012AEF026B4662000650313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3012AEF226B4662300650313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3012AEF526B4662300650313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		3012AF0726B4662300650313 /* vkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3012AF0B26B4662300650313 /* vkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vkUITests.swift; sourceTree = "<group>"; };
 		3012AF0D26B4662300650313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3012AF1926B4664B00650313 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,8 @@
 			children = (
 				3012AEE926B4662000650313 /* AppDelegate.swift */,
 				3012AEEB26B4662000650313 /* SceneDelegate.swift */,
-				3012AEED26B4662000650313 /* ViewController.swift */,
 				3012AEEF26B4662000650313 /* Main.storyboard */,
+				3012AF1926B4664B00650313 /* LoginViewController.swift */,
 				3012AEF226B4662300650313 /* Assets.xcassets */,
 				3012AEF426B4662300650313 /* LaunchScreen.storyboard */,
 				3012AEF726B4662300650313 /* Info.plist */,
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3012AEEE26B4662000650313 /* ViewController.swift in Sources */,
+				3012AF1A26B4664B00650313 /* LoginViewController.swift in Sources */,
 				3012AEEA26B4662000650313 /* AppDelegate.swift in Sources */,
 				3012AEEC26B4662000650313 /* SceneDelegate.swift in Sources */,
 			);

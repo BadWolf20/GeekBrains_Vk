@@ -32,15 +32,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k19-gF-mvM">
-                                                <rect key="frame" x="32" y="327" width="350" height="164"/>
+                                                <rect key="frame" x="32" y="327.5" width="350" height="163"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g6H-G5-TyR" userLabel="Password Text Field">
-                                                        <rect key="frame" x="141" y="107" width="181.5" height="37"/>
+                                                        <rect key="frame" x="141" y="107" width="181.5" height="36"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CH6-iI-0HB">
-                                                        <rect key="frame" x="-1" y="107" width="102" height="37"/>
+                                                        <rect key="frame" x="-1" y="107" width="102" height="36"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -80,7 +80,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZ0-db-VtG">
-                                                <rect key="frame" x="172" y="511" width="70" height="44"/>
+                                                <rect key="frame" x="172" y="510.5" width="70" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="DsV-qs-aHy"/>
                                                 </constraints>

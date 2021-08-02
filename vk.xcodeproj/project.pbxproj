@@ -48,7 +48,7 @@
 		3012AF0726B4662300650313 /* vkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3012AF0B26B4662300650313 /* vkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vkUITests.swift; sourceTree = "<group>"; };
 		3012AF0D26B4662300650313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3012AF1926B4664B00650313 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3012AF1926B4664B00650313 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

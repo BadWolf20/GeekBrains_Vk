@@ -7,8 +7,6 @@
 
 import UIKit
 
-//login = 111
-//password = 111
 
 class LoginViewController: UIViewController {
     

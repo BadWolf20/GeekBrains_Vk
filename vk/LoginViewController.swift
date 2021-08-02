@@ -120,7 +120,7 @@ class LoginViewController: UIViewController {
     ///Переход на tabController при правильности авторизации
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         //return identifier == "showMainScreenID" && checkAutoData()
-        if identifier == "showMainScreenID" && checkAutoData(){
+        if identifier == "showMainScreenID"{
             if !checkAutoData(){
                 showAuthError()
             }

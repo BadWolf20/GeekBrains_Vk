@@ -13,7 +13,6 @@ import UIKit
 class LoginViewController: UIViewController {
     
     
-    
     //MARK: Outlets
     @IBOutlet private var scrollView: UIScrollView!
     

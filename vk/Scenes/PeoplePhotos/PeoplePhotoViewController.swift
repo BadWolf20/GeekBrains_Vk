@@ -27,6 +27,8 @@ extension PeoplePhotoViewController: UICollectionViewDataSource, UICollectionVie
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: resuseID, for: indexPath) as? PhotoCollectionViewCell else {
             fatalError("{Message: error in dequeue FriendTableViewCell }")
         }
+        
+        cell.photo.image = UIImage(named: "Danil")
         return cell
     }
     

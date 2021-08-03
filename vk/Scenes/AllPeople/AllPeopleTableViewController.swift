@@ -14,16 +14,7 @@ class AllPeopleTableViewController: UITableViewController {
     
     //MARK: - Properties
     private let allPeopleID = "allPeopleID"
-    /// Масcив с людьми
-    var people = [Person(name: "Benji", image: nil),
-                  Person(name: "Artem", image: nil),
-                  Person(name: "Adam", image: nil),
-                  Person(name: "Omar", image: nil),
-                  Person(name: "Kirill", image: nil),
-                  Person(name: "Kyle", image: nil),
-                  Person(name: "Vlad", image: nil)
-    ]
-                  
+          
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,7 +25,7 @@ class AllPeopleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return people.count
+        return peopleListAll.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -42,8 +33,8 @@ class AllPeopleTableViewController: UITableViewController {
                 FriendTableViewCell else{
             fatalError("{Message: error in dequeue FriendTableViewCell }")
         }
-        cell.personImage.image = people[indexPath.row].image
-        cell.personName.text = people[indexPath.row].name
+        cell.personImage.image = peopleListAll[indexPath.row].imageMain
+        cell.personName.text = peopleListAll[indexPath.row].name
         return cell
     }
     

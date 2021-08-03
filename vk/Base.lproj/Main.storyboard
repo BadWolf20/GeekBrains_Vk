@@ -264,7 +264,7 @@
                                 <connections>
                                     <outlet property="personImage" destination="nzh-2K-iR8" id="wJ7-nr-xNc"/>
                                     <outlet property="personName" destination="o1o-i4-Qvn" id="BqD-6J-6SG"/>
-                                    <segue destination="d9Q-Oq-CSE" kind="show" id="XHa-75-wUU"/>
+                                    <segue destination="d9Q-Oq-CSE" kind="show" id="2LJ-Hx-piL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -373,11 +373,11 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="bPO-fX-saa" customClass="PhotoCollectionViewCell" customModule="vk" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="90" height="95"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" reuseIdentifier="PhotoCollectionViewCell" id="bPO-fX-saa" customClass="PhotoCollectionViewCell" customModule="vk" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ekf-V4-WVY">
-                                            <rect key="frame" x="0.0" y="0.0" width="90" height="95"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Watch_dogs" translatesAutoresizingMaskIntoConstraints="NO" id="gkg-cd-dnw">
@@ -390,11 +390,12 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="gkg-cd-dnw" secondAttribute="trailing" constant="5" id="P3E-GZ-yR9"/>
-                                                <constraint firstAttribute="bottom" secondItem="gkg-cd-dnw" secondAttribute="bottom" constant="10" id="bBe-Mu-K40"/>
+                                                <constraint firstAttribute="bottom" secondItem="gkg-cd-dnw" secondAttribute="bottom" constant="15" id="bBe-Mu-K40"/>
                                                 <constraint firstItem="gkg-cd-dnw" firstAttribute="top" secondItem="Ekf-V4-WVY" secondAttribute="top" constant="5" id="fY2-eo-fkU"/>
                                                 <constraint firstItem="gkg-cd-dnw" firstAttribute="leading" secondItem="Ekf-V4-WVY" secondAttribute="leading" constant="5" id="kcA-CR-7GC"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="photo" destination="gkg-cd-dnw" id="Pb4-17-Ud6"/>
                                         </connections>

@@ -11,16 +11,24 @@ class PeoplePhotoViewController: UIViewController {
 
     //MARK: - Outlets
     @IBOutlet var collectionView: UICollectionView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
 
     private var resuseID = "PhotoCollectionViewCell"
 
-
+    var photoIndex = 0
+    
+    
 }
 
 
 extension PeoplePhotoViewController: UICollectionViewDataSource, UICollectionViewDelegate{
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return selectedFriend.photos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -28,9 +36,22 @@ extension PeoplePhotoViewController: UICollectionViewDataSource, UICollectionVie
             fatalError("{Message: error in dequeue FriendTableViewCell }")
         }
         
-        cell.photo.image = UIImage(named: "Danil")
+        
+        
+        cell.photo.image = selectedFriend.photos[photoIndex]
+
+        photoIndex += 1
         return cell
+        
+        
+        
+        
+        
+   
     }
     
     
 }
+
+
+

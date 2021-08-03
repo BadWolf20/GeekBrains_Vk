@@ -31,12 +31,12 @@ var peopleList = [Person(name: "Benji",     friend: false,      imageMain: nil,
                   Person(name: "Kyle",      friend: false,      imageMain: nil,
                          photos: []),
                   Person(name: "Vlad",      friend: false,      imageMain: nil,
+                         photos: []),
+                  Person(name: "Danil",     friend: true,      imageMain: UIImage(named: "Danil"),
                          photos: [UIImage(named: "Pavel"),
                                   UIImage(named: "Danil")]),
-                  Person(name: "Danil",     friend: true,      imageMain: UIImage(named: "Danil"),
-                         photos: []),
                   Person(name: "Pavel",     friend: true,      imageMain: UIImage(named: "Pavel"),
-                         photos: []),
+                         photos: [UIImage(named: "Pavel")]),
                   Person(name: "Max",       friend: true,      imageMain: nil,
                          photos: []),
                   Person(name: "Alex",      friend: true,      imageMain: nil,
@@ -47,6 +47,9 @@ var peopleList = [Person(name: "Benji",     friend: false,      imageMain: nil,
 
 var peopleListFriends: [Person] = []
 var peopleListAll: [Person] = []
+var selectedFriendId = 0
+var selectedFriend = peopleListFriends[0]
+
 
 func checkList(){
     for list in peopleList {

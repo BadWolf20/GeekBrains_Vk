@@ -62,5 +62,11 @@ class FriendsViewController: UITableViewController {
             return
         }
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedFriendId = indexPath.row
+        selectedFriend = peopleListFriends[selectedFriendId]
+    }
+    
+  
 
 }

@@ -10,29 +10,34 @@ import UIKit
 class AllPeopleTableViewController: UITableViewController {
 
     //MARK: - Outlets
+    
     @IBOutlet var peopleListTable: UITableView!
     
+    
     //MARK: - Properties
+    
     private let allPeopleID = "allPeopleID"
           
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    //MARK: - Tableview
+    /// Отображение и обработак ячеек таблицы и действий с ними
 
-    }
-
-    // MARK: - Table view data source
-
-
+    /// Функция определяет количество отображаемых ячеек в таблице, зависит от количества людей в общем списке
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return peopleListAll.count
     }
 
+    
+    /// Функция возвращает ячейку. Выполняется столько раз, сколько ячеек будет отображено.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        /// Определяем ячейку, которую будем заполнять данными, id ячейки берется из Storyboard
         guard let cell = tableView.dequeueReusableCell(withIdentifier: allPeopleID, for: indexPath) as?
                 FriendTableViewCell else{
             fatalError("{Message: error in dequeue FriendTableViewCell }")
         }
+        
+        /// Определяем данные помещеннные в конкретную ячейку в таблице
         cell.personImage.image = peopleListAll[indexPath.row].imageMain
         cell.personName.text = peopleListAll[indexPath.row].name
         return cell

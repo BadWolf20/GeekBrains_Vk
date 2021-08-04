@@ -9,7 +9,7 @@ import UIKit
 
 class FriendTableViewCell: UITableViewCell {
     
-    //MARK: Outlets
+    //MARK: - Outlets
     @IBOutlet var personImage: UIImageView!
     @IBOutlet var personName: UILabel!
     

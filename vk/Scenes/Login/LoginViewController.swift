@@ -11,8 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
     
     
-    
-    //MARK: Outlets
+    //MARK: - Outlets
     @IBOutlet private var scrollView: UIScrollView!
     
     @IBOutlet private var loginTextField: UITextField!
@@ -27,6 +26,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /// Вызов функции которая распределяет по людей по спискам спискам
         checkList()
     }
     
@@ -47,7 +48,7 @@ class LoginViewController: UIViewController {
     
     
     
-    //MARK: Functions
+    //MARK: - Functions
     
     /// Настройка скролинга и автоскролинга при появлении клавиатуры
     @objc func  keyBoardWasShown(_ notification: Notification){
@@ -77,7 +78,7 @@ class LoginViewController: UIViewController {
     }
     
     
-    //MARK: Авторизация
+    //MARK: - Авторизация
     /// Сообщение об ошибке авторизации
     func showAuthError() {
         

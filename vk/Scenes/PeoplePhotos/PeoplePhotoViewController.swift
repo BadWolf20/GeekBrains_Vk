@@ -16,9 +16,6 @@ class PeoplePhotoViewController: UIViewController {
     
     // MARK: - Properties
     private var resuseID = "PhotoCollectionViewCell"
-
-    /// Индекс для отображения всех фото для каждого друга
-    var photoIndex = 0
     
 }
 
@@ -40,9 +37,7 @@ extension PeoplePhotoViewController: UICollectionViewDataSource, UICollectionVie
         }
         
         /// Определяем данные помещеннные в конкретную ячейку в таблице
-        cell.photo.image = selectedFriend.photos[photoIndex]
-        /// Не самый правильный способ, при переопределении возникает ошибка
-        photoIndex += 1
+        cell.photo.image = selectedFriend.photos[indexPath.row]
         return cell
     }
 }

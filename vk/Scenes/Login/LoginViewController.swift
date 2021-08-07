@@ -27,8 +27,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        /// Вызов функции которая распределяет по людей по спискам спискам
-        checkList()
+        /// Вызов функции которая распределяет людей по спискам
+        checkPeopleList()
+        /// Вызов функции которая распределяет группы по  спискам
+        checkGroupList()
     }
     
     

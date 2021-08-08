@@ -25,6 +25,7 @@
 		3021895426BEF15D00A9D1DE /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021895326BEF15D00A9D1DE /* GroupsTableViewCell.swift */; };
 		3021895726BEF7F400A9D1DE /* SearchGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021895626BEF7F400A9D1DE /* SearchGroupsTableViewController.swift */; };
 		3021895A26BEF85B00A9D1DE /* SearchGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3021895926BEF85B00A9D1DE /* SearchGroupTableViewCell.swift */; };
+		306399F026BFBBCE00231507 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306399EF26BFBBCE00231507 /* Colors.swift */; };
 		3095C2E426BAF0050015C071 /* MyGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3095C2E326BAF0050015C071 /* MyGroupsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		3021895326BEF15D00A9D1DE /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
 		3021895626BEF7F400A9D1DE /* SearchGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroupsTableViewController.swift; sourceTree = "<group>"; };
 		3021895926BEF85B00A9D1DE /* SearchGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGroupTableViewCell.swift; sourceTree = "<group>"; };
+		306399EF26BFBBCE00231507 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		3095C2E326BAF0050015C071 /* MyGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 		3012AEE826B4662000650313 /* vk */ = {
 			isa = PBXGroup;
 			children = (
+				306399EE26BFBBAB00231507 /* Styles */,
 				3012AEE926B4662000650313 /* AppDelegate.swift */,
 				3012AEEB26B4662000650313 /* SceneDelegate.swift */,
 				3020610726B866A1008CCD1C /* Models */,
@@ -246,6 +249,14 @@
 				3021895926BEF85B00A9D1DE /* SearchGroupTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		306399EE26BFBBAB00231507 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				306399EF26BFBBCE00231507 /* Colors.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		3095C2E226BAEF230015C071 /* MyGroups */ = {
@@ -388,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3020610F26B8731A008CCD1C /* PeoplePhotoViewController.swift in Sources */,
+				306399F026BFBBCE00231507 /* Colors.swift in Sources */,
 				3021895A26BEF85B00A9D1DE /* SearchGroupTableViewCell.swift in Sources */,
 				3020610326B8568D008CCD1C /* FriendsViewController.swift in Sources */,
 				3012AF1A26B4664B00650313 /* LoginViewController.swift in Sources */,

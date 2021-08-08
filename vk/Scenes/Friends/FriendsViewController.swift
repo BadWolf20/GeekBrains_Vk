@@ -21,6 +21,12 @@ class FriendsViewController: UITableViewController {
     
     //MARK: - Functions
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        friendsTableView.backgroundColor = tableBackGroundColor
+        
+    }
+    
  
 
     
@@ -64,6 +70,11 @@ class FriendsViewController: UITableViewController {
                 FriendTableViewCell else{
             fatalError("{Message: error in dequeue FriendTableViewCell }")
         }
+        
+        ///BackGround
+        cell.backgroundColor = cellBackGroundColor
+        
+        
         
         /// Определяем данные помещеннные в конкретную ячейку в таблице
         cell.personImage.image = peopleListFriends[indexPath.row].imageMain

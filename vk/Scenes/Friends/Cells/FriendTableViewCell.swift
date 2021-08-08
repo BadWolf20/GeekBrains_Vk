@@ -14,6 +14,7 @@ class FriendTableViewCell: UITableViewCell {
     @IBOutlet var personName: UILabel!
     
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

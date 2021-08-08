@@ -23,12 +23,25 @@ class MyGroupsViewController: UITableViewController {
     //MARK: - Functions
     
     /// Функция которая вызываетя при возвращении из общего списка
-  //  @IBAction func goBackFromAllGroupsScreen(with segue: UIStoryboardSegue){
+    @IBAction func goBackFromAllGroupsScreen(with segue: UIStoryboardSegue){
         
-//        /// Передачач переменной из вью выхода (общего списка)
-//        guard let AvalibleVC = segue.source as? AllPeopleTableViewController,
-//              let indexPath = AvalibleVC.tableView.indexPathForSelectedRow else {return}
-
+        /// Передачач переменной из вью выхода (общего списка)
+        guard let AvalibleVC = segue.source as? SearchGroupsTableViewController,
+              let indexPath = AvalibleVC.tableView.indexPathForSelectedRow else {return}
+        
+        
+        allGroupsList[indexPath.row].part = true
+        let newGroup = allGroupsList[indexPath.row]
+        allGroupsList.remove(at: indexPath.row)
+        
+        /// Проверка нет ли уже такой группы в моих группах (Вопрос необходиости!!!!!)
+        guard !myGroupsList.contains(where: {group -> Bool in
+            group.name ==  newGroup.name
+        }) else {return}
+        
+        myGroupsList.append(newGroup)
+        myGroupsTableView.reloadData()
+    }
     
     
     
@@ -56,32 +69,22 @@ class MyGroupsViewController: UITableViewController {
     cell.groupName.text = myGroupsList[indexPath.row].name
        return cell
     }
-//
-//
-//    /// Функкция овечает за схахивание ячейки влево (Удалить)
-//    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-//        switch editingStyle {
-//        case .delete:
-//            /// Перенос из списка друзей в общий список, и изменения статуса "Друг"
-//            peopleListFriends[indexPath.row].friend = false
-//            let deletedFriend = peopleListFriends[indexPath.row]
-//            peopleListFriends.remove(at: indexPath.row)
-//            peopleListAll.append(deletedFriend)
-//            tableView.deleteRows(at: [indexPath], with: .automatic)
-//
-//        default:
-//            return
-//        }
-//    }
-//
-//
-//    /// Функция выполняется при нажати на ячейку, и определся номер этой ячейки
-//    /// Номер ячейкки присвается глабальной переменной selectedFriendId
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        selectedFriendId = indexPath.row
-//        selectedFriend = peopleListFriends[selectedFriendId]
-//    }
     
+    
+    /// Функкция овечает за схахивание ячейки влево (Удалить)
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        switch editingStyle {
+        case .delete:
+            myGroupsList[indexPath.row].part = false
+            let deletedGroup = myGroupsList[indexPath.row]
+            myGroupsList.remove(at: indexPath.row)
+            allGroupsList.append(deletedGroup)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        default:
+            return
+        }
+    }
+
 }
 
 

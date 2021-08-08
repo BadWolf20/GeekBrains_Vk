@@ -248,6 +248,7 @@
                                 <connections>
                                     <outlet property="GroupName" destination="ste-oa-Qx2" id="f38-c6-7RC"/>
                                     <outlet property="groupImage" destination="FkD-yY-9xq" id="P9t-oE-NFT"/>
+                                    <segue destination="Xvt-v2-ZuU" kind="unwind" unwindAction="goBackFromAllGroupsScreenWith:" id="DaW-oy-i1g"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -262,6 +263,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pDT-08-1rG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Xvt-v2-ZuU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="5147.826086956522" y="862.5"/>
         </scene>

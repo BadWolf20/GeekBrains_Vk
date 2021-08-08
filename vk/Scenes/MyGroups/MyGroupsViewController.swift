@@ -56,7 +56,7 @@ class MyGroupsViewController: UITableViewController {
 
     
     /// Функция возвращает ячейку. Выполняется столько раз, сколько ячеек будет отображено.
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         /// Определяем ячейку, которую будем заполнять данными, id ячейки берется из Storyboard
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as?
@@ -65,9 +65,9 @@ class MyGroupsViewController: UITableViewController {
         }
         
         /// Определяем данные помещеннные в конкретную ячейку в таблице
-    cell.groupImage.image = myGroupsList[indexPath.row].imageMain
-    cell.groupName.text = myGroupsList[indexPath.row].name
-       return cell
+        cell.groupImage.image = myGroupsList[indexPath.row].imageMain
+        cell.groupName.text = myGroupsList[indexPath.row].name
+        return cell
     }
     
     

@@ -20,7 +20,7 @@ class SearchGroupsTableViewController: UITableViewController {
     //MARK: - Tableview
     /// Отображение и обработак ячеек таблицы и действий с ними
 
-    /// Функция определяет количество отображаемых ячеек в таблице, зависит от количества друзей
+    /// Функция определяет количество отображаемых ячеек в таблице, зависит от количества групп
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
         return allGroupsList.count

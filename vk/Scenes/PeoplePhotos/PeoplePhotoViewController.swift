@@ -17,6 +17,9 @@ class PeoplePhotoViewController: UIViewController {
     // MARK: - Properties
     private var resuseID = "PhotoCollectionViewCell"
     
+    /// Переменная получающая индекс выбраной ячейки из превудущего контроллера
+    var selectedPersonIndex: Int = 0
+    
 }
 
 
@@ -25,7 +28,7 @@ extension PeoplePhotoViewController: UICollectionViewDataSource, UICollectionVie
     
     /// Функция определяет количество отображаемых ячеек в таблице, зависит от количества фотографий у человека
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return selectedFriend.photos.count
+        return peopleListFriends[selectedPersonIndex].photos.count
     }
     
     /// Функция возвращает ячейку. Выполняется столько раз, сколько ячеек будет отображено.
@@ -37,7 +40,7 @@ extension PeoplePhotoViewController: UICollectionViewDataSource, UICollectionVie
         }
         
         /// Определяем данные помещеннные в конкретную ячейку в таблице
-        cell.photo.image = selectedFriend.photos[indexPath.row]
+        cell.photo.image = peopleListFriends[selectedPersonIndex].photos[indexPath.row]
         return cell
     }
 }

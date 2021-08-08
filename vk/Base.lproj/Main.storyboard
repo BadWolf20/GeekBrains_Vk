@@ -326,7 +326,7 @@
                                 <connections>
                                     <outlet property="personImage" destination="nzh-2K-iR8" id="wJ7-nr-xNc"/>
                                     <outlet property="personName" destination="o1o-i4-Qvn" id="BqD-6J-6SG"/>
-                                    <segue destination="d9Q-Oq-CSE" kind="show" id="2LJ-Hx-piL"/>
+                                    <segue destination="d9Q-Oq-CSE" kind="show" identifier="ShowPersonPhotos" id="2LJ-Hx-piL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

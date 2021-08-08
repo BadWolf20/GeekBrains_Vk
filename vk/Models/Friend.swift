@@ -7,7 +7,7 @@
 
 import UIKit
 
-/// Структура определяющая людей
+/// Структура определяющая человека
 struct Person {
     let name: String
     var friend: Bool
@@ -67,10 +67,6 @@ var peopleListFriends: [Person] = []
 /// Список не друзей
 var peopleListAll: [Person] = []
 
-/// Переменные использующиеся для определения выбраного человека на экране друзей.
-/// Используются для отображения всех фотографий человека
-var selectedFriendId = 0
-var selectedFriend = peopleListFriends[0]
 
 /// Функция которая распределяет людей по спискам
 func checkPeopleList(){

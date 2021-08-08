@@ -21,6 +21,9 @@ class FriendsViewController: UITableViewController {
     
     //MARK: - Functions
     
+ 
+
+    
     /// Функция которая вызываетя при возвращении из общего списка
     @IBAction func goBackFromAllPeopleScreen(with segue: UIStoryboardSegue){
         
@@ -85,14 +88,19 @@ class FriendsViewController: UITableViewController {
         }
     }
     
+    var selectedPersonIndex = 0
     
-    /// Функция выполняется при нажати на ячейку, и определся номер этой ячейки
-    /// Номер ячейкки присвается глабальной переменной selectedFriendId
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectedFriendId = indexPath.row
-        selectedFriend = peopleListFriends[selectedFriendId]
+    /// Функция передает данные на контролер на который осуществляется переход
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "ShowPersonPhotos" else { return }
+        guard let destination = segue.destination as? PeoplePhotoViewController else { return }
+        destination.selectedPersonIndex = selectedPersonIndex
     }
     
-  
+    /// Функция выполняется при нажати на ячейку, и определся номер этой ячейки
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+            selectedPersonIndex = indexPath.row
+            return indexPath
+    }
 
 }

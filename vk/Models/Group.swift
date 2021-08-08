@@ -7,7 +7,7 @@
 
 import UIKit
 
-
+/// Структура определяющая группу
 struct Group {
     let name: String
     var part: Bool
@@ -18,12 +18,13 @@ var groupsList = [Group(name: "appleBlog",  part: false,    imageMain: UIImage(n
                   Group(name: "itProger",   part: true,     imageMain: UIImage(named: "G-1"))]
 
 
-/// Список друзей
+/// Список групп
 var myGroupsList: [Group] = []
 
-/// Список не друзей
+/// Список не нащих групп
 var allGroupsList: [Group] = []
 
+/// Функция которая распределяет группы по спискам
 func checkGroupList(){
     for list in groupsList {
         
